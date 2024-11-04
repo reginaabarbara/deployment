@@ -92,7 +92,7 @@ jobs:
         with:
           repository: reginaabarbara/deployment
           path: deployment
-          token: ${{ secrets.DEPLOYMENT_PAT }}
+          token: ${{ secrets.deployment_pat }}
           ref: refs/heads/main
 
      
