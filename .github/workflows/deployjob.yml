@@ -96,13 +96,13 @@ jobs:
           ref: refs/heads/main
 
      
-#      - name: Update deployments repository
- #       run: |
-  #        cd deployments
-   #       git config user.name github-actions
-    #      git config user.email github-actions@github.com
-     #     git fetch
-      #    git pull origin main --ff-only
-       #   git add --all
-       #   git commit -m "Update image tag to ${{ inputs.app }}:${{ env.ENVIRONMENT }}"
-        #  git push
+      - name: Update deployments repository
+        run: |
+          cd deployment
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git fetch
+          git pull origin main --ff-only
+          git add --all
+          git commit -m "Update image tag to ${{ inputs.app }}:${{ env.ENVIRONMENT }}"
+          git push
