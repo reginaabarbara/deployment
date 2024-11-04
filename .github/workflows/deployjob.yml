@@ -30,9 +30,9 @@ on:
         default: "reginaabarbara"
         type: string
     secrets:
-      deployment_pat:
+      DEPLOYMENT_PAT:
         required: true
-      dockerhub_pwd:
+      PASSWD:
         required: true
 
 jobs:
